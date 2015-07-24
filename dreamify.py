@@ -7,6 +7,10 @@ from IPython.display import clear_output, Image, display
 from google.protobuf import text_format
 
 import caffe
+# change 0 to the identifier of the GPU you want to use
+# this number can be found with nvidia-smi
+caffe.set_device(0)
+caffe.set_mode_gpu()
 
 import sys
 
